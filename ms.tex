@@ -1,0 +1,166 @@
+\documentclass{beamer}
+
+\usepackage[T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{paratype}
+\usepackage{xcolor}
+\usepackage{colortbl}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{booktabs}
+
+\usepackage{mathtools}
+\let\abs\relax
+\DeclarePairedDelimiter\abs{\lvert}{\rvert}
+
+\usetheme{Darmstadt}
+\usecolortheme{seahorse}
+\usefonttheme[onlymath]{serif}
+\usepackage{marvosym}
+\usepackage{tikz}
+\usetikzlibrary{graphs}
+\usetikzlibrary{shapes, arrows}
+\tikzstyle{decision} = [
+                diamond,
+                draw,
+                fill = green!20,
+                text width = 6em,
+                text badly centered,
+                node distance = 2cm,
+                inner sep = 0pt
+        ]
+\tikzstyle{block} = [
+                rectangle,
+                draw,
+                fill = blue!20,
+                text width = 7em,
+                text centered,
+                rounded corners,
+                minimum height = 3em
+        ]
+\tikzstyle{block0} = [
+                rectangle,
+                draw,
+                fill = yellow!10,
+                text width = 13em,
+                rounded corners,
+                minimum width = 13em
+        ]
+\tikzstyle{line} = [
+                draw,
+                -latex'
+        ]
+
+%Более крупный шрифт для подзаголовков титульного листа
+\setbeamerfont{institute}{size=\normalsize}
+
+\newcommand{\col}{\textcolor[rgb]{0.2,0.,0.55}}
+
+\AtBeginSection[]{
+  \begin{frame}
+  \vfill
+  \centering
+  \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{title}
+    \LARGE\insertsectionhead\par%
+  \end{beamercolorbox}
+  \vfill
+  \end{frame}
+}
+
+\AtBeginSubsection[]{
+  \begin{frame}
+  \vfill
+  \centering
+  \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{title}
+    \usebeamerfont{title}\insertsubsectionhead\par%
+  \end{beamercolorbox}
+  \vfill
+  \end{frame}
+}
+
+\begin{document}
+
+\title{{Теория магического четырёхугольника}}
+\author[%
+	Назаров В.\ С. \and Фрайман М.\ И.
+]{%
+	\scriptsize
+	Назаров В.\ С. \and Фрайман М.\ И.
+}
+\date{\footnotesize{Москва "--- 2019}}
+
+
+	\begin{frame}
+		\begin{center}
+			\footnotesize{МГУ имени М. В. Ломоносова}\\
+			\footnotesize{Механико-математический факультет}\\\vspace{10pt}
+		\end{center}
+		\titlepage
+	\end{frame}
+
+	\begin{frame}{Что это такое}
+	
+		\textbf{Магический четырёхугольник} "--- это схема, иллюстрирующая основные цели экономической политики:
+		\begin{itemize}
+			\item Экономический рост (обычно "--- ВВП или ВНП),
+			\item Полная занятость населения,
+			\item Низкая инфляция,
+			\item Платёжный баланс.
+		\end{itemize}
+		
+	\end{frame}
+	
+	\begin{frame}{Формула}
+			\[
+				\mathrm{MPI_{MS}} = \lambda_{\hat{y}}\cdot\hat{y} - 
+									\lambda_\pi\cdot\abs*{\pi-\pi^T} +
+									\lambda_{\mathrm{cab}}\cdot\abs*{{\mathrm{cab}}-{\mathrm{cab}}^T} -
+									\lambda_u\cdot\abs*{u-u^T}
+			\]
+			
+			\begin{itemize}
+			\item $\lambda$ "--- веса, ассоциированные с параметрами,
+			\item $\hat{y}$ "--- реальный ВВП на душу населения,
+			\item $\pi$ "--- скорость инфляции,
+			\item $\mathrm{cab}$ "--- баланс на счету,
+			\item $u$ "--- уровень безработицы,
+			\item индекс $T$ указывает на то, что параметр \textit{желаемый.}
+			\end{itemize}
+			
+	\end{frame}
+
+\end{document}
+
+	\begin{frame}
+	
+	\end{frame}
+	
+	\begin{frame}
+	
+	\end{frame}
+
+	\begin{frame}
+	
+	\end{frame}
+
+	\begin{frame}
+	
+	\end{frame}
+	
+	\begin{frame}
+	
+	\end{frame}
+	
+	\begin{frame}
+	
+	\end{frame}
+
+	\begin{frame}
+	
+	\end{frame}
+	
+	\begin{frame}
+	
+	\end{frame}
+
+\end{document}
